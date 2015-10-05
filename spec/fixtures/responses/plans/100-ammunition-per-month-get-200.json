@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "message": "success",
+  "plan": {
+    "plan_code": "100-ammunition-per-month",
+    "name": "Ammunition Galore",
+    "description": "",
+    "status": "active",
+    "product_id": "187955000000050119",
+    "account_id": "187955000000000388",
+    "account_name": "Sales",
+    "tax_name": "",
+    "tax_percentage": 0,
+    "tax_type": "",
+    "trial_period": 0,
+    "setup_fee": 0.0,
+    "recurring_price": 99999.99,
+    "interval": 1,
+    "interval_unit": "months",
+    "billing_cycles": -1,
+    "url": "https://subscriptions.zoho.com/subscribe/3afef7d3f8ffabde492fcc6520a44dde6a2bba0f6b0532177e00f0ba8db832fc/100-ammunition-per-month",
+    "tax_id": "",
+    "created_time": "2015-10-03T08:21:52+0800",
+    "updated_time": "2015-10-03T08:21:52+0800"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "code": 0,
+  "message": "success",
+  "organizations": [
+    {
+      "organization_id": "123",
+      "name": "Test",
+      "contact_name": "Test Man",
+      "email": "test@payrollhero.com",
+      "is_default_org": false,
+      "source": 2,
+      "country": "Singapore",
+      "org_settings": true,
+      "is_ziedition": false,
+      "is_zbclient": false,
+      "custom_field_type": 1,
+      "version": "global",
+      "is_moss_enabled": false,
+      "is_sales_inclusive_tax_enabled": false,
+      "plan_type": 0,
+      "tax_group_enabled": true,
+      "plan_name": "FREE",
+      "plan_period": "",
+      "language_code": "en",
+      "fiscal_year_start_month": 0,
+      "account_created_date": "2015-09-24",
+      "account_created_date_formatted": "09/24/15",
+      "time_zone": "Australia/Perth",
+      "field_separator": "/",
+      "time_zone_formatted": "( GMT 8:00 ) Western Standard Time (Australia)(Australia/Perth)",
+      "is_org_active": true,
+      "mode": "test",
+      "is_quick_setup_completed": false,
+      "is_trial_period_extended": false,
+      "currency_id": "187955000000000097",
+      "currency_code": "USD",
+      "currency_symbol": "$",
+      "currency_format": "###,##0.00",
+      "price_precision": 2,
+      "badge_count": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "code": 0,
+  "message": "The product has been added.",
+  "product": {
+    "product_id": "187955000000050119",
+    "name": "Bazooka",
+    "description": "",
+    "status": "active",
+    "redirect_url": "",
+    "email_ids": "",
+    "created_time": "2015-10-03T07:48:57+0800",
+    "updated_time": "2015-10-03T07:48:57+0800"
+  }
+}

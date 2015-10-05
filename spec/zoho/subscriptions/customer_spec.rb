@@ -4,8 +4,13 @@ describe Zoho::Subscriptions::Customer do
   subject(:customer) { described_class.find id }
 
   describe ".all" do
-    it { expect(described_class.all.first).to be_a Zoho::Subscriptions::Customer }
-    it { expect(described_class.all.count).to eq 3 }
+    let(:all_customers) { described_class.all }
+
+    example {
+      expect(all_customers.count).to eq 2
+      expect(all_customers.first).to be_a Zoho::Subscriptions::Customer
+      expect(all_customers.last).to be_a Zoho::Subscriptions::Customer
+    }
   end
 
   describe ".find" do
@@ -35,7 +40,7 @@ describe Zoho::Subscriptions::Customer do
   end
 
   describe "#update" do
-    let(:id) { 187955000000050039 }
+    let(:id) { 187955000000050001 }
     let(:customer) { described_class.find id }
 
     it {
@@ -46,7 +51,7 @@ describe Zoho::Subscriptions::Customer do
   end
 
   describe "#destroy" do
-    let(:id) { 187955000000050025 }
+    let(:id) { 187955000000050083 }
     let(:customer) { described_class.find id }
 
     before { customer.destroy }

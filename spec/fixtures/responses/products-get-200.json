@@ -1,0 +1,34 @@
+{
+  "code": 0,
+  "message": "success",
+  "products": [
+    {
+      "product_id": "187955000000050116",
+      "name": "Doomsday Device",
+      "description": "",
+      "status": "active",
+      "redirect_url": "",
+      "email_ids": "",
+      "created_time": "2015-10-03T07:42:32+0800",
+      "updated_time": ""
+    },
+    {
+      "product_id": "187955000000050117",
+      "name": "Bazooka",
+      "description": "",
+      "status": "active",
+      "redirect_url": "",
+      "email_ids": "",
+      "created_time": "2015-10-03T07:42:32+0800",
+      "updated_time": ""
+    }
+  ],
+  "page_context": {
+    "page": 1,
+    "per_page": 200,
+    "has_more_page": false,
+    "applied_filter": "ProductStatus.All",
+    "sort_column": "created_time",
+    "sort_order": "A"
+  }
+}

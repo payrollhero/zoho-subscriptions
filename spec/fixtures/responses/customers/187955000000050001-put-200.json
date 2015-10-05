@@ -1,0 +1,64 @@
+{
+  "code": 0,
+  "message": "Customer information has been saved.",
+  "customer": {
+    "display_name": "Jane Doe",
+    "company_name": "",
+    "customer_id": "187955000000050001",
+    "status": "active",
+    "currency_id": "187955000000000097",
+    "source": "api",
+    "payment_reminder_enabled": true,
+    "currency_code": "USD",
+    "currency_symbol": "$",
+    "price_precision": 2,
+    "unused_credits": 0.0,
+    "outstanding_receivable_amount": 0.0,
+    "outstanding": 0.0,
+    "first_name": "",
+    "last_name": "",
+    "email": "john@doe.com",
+    "phone": "",
+    "mobile": "",
+    "website": "",
+    "pricebook_id": "187955000000011001",
+    "zcrm_account_id": "",
+    "zcrm_contact_id": "",
+    "custom_fields": [
+
+    ],
+    "payment_terms": 0,
+    "payment_terms_label": "Due On Receipt",
+    "is_gapps_customer": false,
+    "unused_credits_receivable_amount": 0.0,
+    "unused_credits_receivable_amount_bcy": 0.0,
+    "unused_credits_payable_amount": 0.0,
+    "unused_credits_payable_amount_bcy": 0.0,
+    "is_linked_with_zohocrm": false,
+    "billing_address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "country": "",
+      "fax": ""
+    },
+    "shipping_address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "country": "",
+      "fax": ""
+    },
+    "can_add_card": true,
+    "can_add_bank_account": false,
+    "notes": "",
+    "created_time": "2015-10-02T10:18:38+0800",
+    "updated_time": "2015-10-03T07:21:35+0800",
+    "default_templates": {
+      "invoice_template_id": "",
+      "creditnote_template_id": ""
+    }
+  }
+}

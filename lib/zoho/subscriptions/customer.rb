@@ -1,10 +1,6 @@
 module Zoho
   module Subscriptions
     class Customer < ResourceBase
-      configure do |config|
-        config.resource_name = "customer"
-      end
-
       resource_attributes :customer_id,
                           :display_name,
                           :first_name,
@@ -30,8 +26,6 @@ module Zoho
                           :zcrm_contact_id,
                           :updated_time,
                           :created_time
-
-      alias :id :customer_id
     end
   end
 end

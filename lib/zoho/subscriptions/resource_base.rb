@@ -9,13 +9,19 @@ module Zoho
       config_accessor :resource_name
 
       class << self
+        def inherited(resource)
+          resource.configure do |config|
+            config.resource_name = resource.name.gsub("Zoho::Subscriptions::", "").underscore
+          end
+        end
+
         def resource_attributes(*attribute_names)
           @attribute_names = attribute_names
           attr_accessor *attribute_names
         end
 
-        def all
-          response = Client.get "/#{pluralized_resource_name}"
+        def all(filter = {})
+          response = Client.get "/#{pluralized_resource_name}", query: filter
 
           case response.code
           when 200
