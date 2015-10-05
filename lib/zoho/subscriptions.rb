@@ -9,5 +9,6 @@ module Zoho
     autoload :Client
     autoload :ResourceBase
     autoload :Customer
+    autoload :Subscription
   end
 end
