@@ -1,0 +1,29 @@
+{
+  "code": 0,
+  "message": "success",
+  "addon": {
+    "name": "Target",
+    "addon_code": "target",
+    "description": "",
+    "status": "active",
+    "product_id": "187955000000050119",
+    "account_id": "187955000000000388",
+    "account_name": "Sales",
+    "tax_id": "",
+    "tax_name": "",
+    "tax_percentage": 0,
+    "tax_type": "",
+    "applicable_to_all_plans": true,
+    "type": "one_time",
+    "pricing_scheme": "unit",
+    "unit_name": "Piece",
+    "stock_on_hand": "",
+    "price_brackets": [
+      {
+        "price": 1.0
+      }
+    ],
+    "created_time": "2015-10-03T09:10:22+0800",
+    "updated_time": "2015-10-03T09:10:22+0800"
+  }
+}

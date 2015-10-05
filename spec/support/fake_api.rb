@@ -92,6 +92,37 @@ class FakeApi < Sinatra::Base
     json_response 400, "plans/0-get-400.json"
   end
 
+  # Addons
+
+  get "/api/v1/addons" do
+    json_response 200, "addons-get-200.json"
+  end
+
+  get "/api/v1/addons/target" do
+    case count_requests(request)
+    when 0
+      json_response 200, "addons/target-get-200.json"
+    else
+      json_response 400, "addons/target-get-400.json"
+    end
+  end
+
+  post "/api/v1/addons" do
+    json_response 201, "addons-post-201.json"
+  end
+
+  put "/api/v1/addons/target" do
+    json_response 200, "addons/target-put-200.json"
+  end
+
+  delete "/api/v1/addons/target" do
+    json_response 200, "addons/target-delete-200.json"
+  end
+
+  get "/api/v1/addons/0" do
+    json_response 400, "addons/0-get-400.json"
+  end
+
   # Customers
 
   get "/api/v1/customers" do
