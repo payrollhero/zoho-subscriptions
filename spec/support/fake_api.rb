@@ -162,6 +162,43 @@ class FakeApi < Sinatra::Base
     json_response 400, "customers/0-get-400.json"
   end
 
+  # Subscriptions
+
+  get "/api/v1/subscriptions" do
+    json_response 200, "subscriptions-get-200.json"
+  end
+
+  get "/api/v1/subscriptions/187955000000053082" do
+    json_response 200, "subscriptions/187955000000053082-get-200.json"
+  end
+
+  post "/api/v1/subscriptions" do
+    json_response 201, "subscriptions-post-201.json"
+  end
+
+  put "/api/v1/subscriptions/187955000000053082" do
+    json_response 200, "subscriptions/187955000000053082-put-200.json"
+  end
+
+  get "/api/v1/subscriptions/0" do
+    json_response 404, "subscriptions/0-get-404.json"
+  end
+
+  get "/api/v1/subscriptions/187955000000053196" do
+    json_response 200, "subscriptions/187955000000053196-get-200.json"
+  end
+
+  post "/api/v1/subscriptions/187955000000053196/cancel" do
+    json_response 200, "subscriptions/187955000000053196/cancel-post-200.json"
+  end
+
+  # catch all
+  [:get, :post, :put, :delete].each do |http_method|
+    send http_method, "/*" do
+      raise ArgumentError, "no fake API route found for: #{http_method} #{request.path}"
+    end
+  end
+
   after do
     self.class.request_history << request
   end

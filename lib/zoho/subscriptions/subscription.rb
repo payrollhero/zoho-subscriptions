@@ -1,10 +1,6 @@
 module Zoho
   module Subscriptions
     class Subscription < ResourceBase
-      configure do |config|
-        config.resource_name = "subscription"
-      end
-
       resource_attributes :subscription_id,
                           :name,
                           :customer,
@@ -43,7 +39,7 @@ module Zoho
                           :created_time,
                           :updated_time
 
-      alias :id :subscription_id
+      custom_action :cancel, http_method: :post, send_params_through: :query
     end
   end
 end

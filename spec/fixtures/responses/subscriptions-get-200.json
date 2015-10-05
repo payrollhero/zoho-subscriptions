@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "message": "success",
+  "subscriptions": [
+    {
+      "customer_id": "187955000000053001",
+      "subscription_id": "187955000000053033",
+      "name": "Rocket Launcher-Ammunition Bonanza",
+      "status": "live",
+      "sub_total": 99999.99,
+      "amount": 99999.99,
+      "activated_at": "2015-10-06",
+      "current_term_starts_at": "2015-10-06",
+      "current_term_ends_at": "2015-11-06",
+      "last_billing_at": "2015-10-06",
+      "next_billing_at": "2015-11-06",
+      "expires_at": "",
+      "interval": 1,
+      "interval_unit": "months",
+      "auto_collect": false,
+      "created_time": "2015-10-06T05:34:49+0800",
+      "updated_time": "2015-10-06T05:34:49+0800",
+      "reference_id": "",
+      "salesperson_id": "",
+      "salesperson_name": "",
+      "currency_code": "USD",
+      "currency_symbol": "$"
+    },
+    {
+      "customer_id": "187955000000053001",
+      "subscription_id": "187955000000053082",
+      "name": "Rocket Launcher-Ammunition Bonanza",
+      "status": "live",
+      "sub_total": 999999.9,
+      "amount": 999999.9,
+      "activated_at": "2015-10-06",
+      "current_term_starts_at": "2015-10-06",
+      "current_term_ends_at": "2015-11-06",
+      "last_billing_at": "2015-10-06",
+      "next_billing_at": "2015-11-06",
+      "expires_at": "",
+      "interval": 1,
+      "interval_unit": "months",
+      "auto_collect": false,
+      "created_time": "2015-10-06T05:37:14+0800",
+      "updated_time": "2015-10-06T05:46:20+0800",
+      "reference_id": "",
+      "salesperson_id": "",
+      "salesperson_name": "",
+      "currency_code": "USD",
+      "currency_symbol": "$"
+    }
+  ],
+  "page_context": {
+    "page": 1,
+    "per_page": 200,
+    "has_more_page": false,
+    "applied_filter": "SubscriptionStatus.LIVE",
+    "sort_column": "created_time",
+    "sort_order": "A"
+  }
+}
