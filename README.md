@@ -1,8 +1,10 @@
 # Zoho::Subscriptions
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/zoho/subscriptions`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/zoho-subscriptions.svg)](http://badge.fury.io/rb/zoho-subscriptions)
+[![Code Climate](https://codeclimate.com/github/payrollhero/zoho-subscriptions/badges/gpa.svg)](https://codeclimate.com/github/payrollhero/zoho-subscriptions)
+[![Build Status](https://travis-ci.org/payrollhero/zoho-subscriptions.svg)](https://travis-ci.org/payrollhero/zoho-subscriptions)
 
-TODO: Delete this and the text above, and describe your gem
+An API client for Zoho Subscriptions.
 
 ## Installation
 
@@ -22,7 +24,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Configuration
+Zoho::Subscriptions::Client.configure auth_token: "6526d398ea6184670ceb588703711368",
+                                      organization_id: "22563c1a1e7cd2dae0e41636cd2931a5"
+
+# Creating a resource
+subscription = Zoho::Subscriptions::Subscription.create customer_id: 187955000000053001,
+                                                        auto_collect: false,
+                                                        plan: { plan_code: "forever-free", quantity: 1 }
+subscription.id # => 187955000000053082
+
+# Retrieving a resource
+subscription = Zoho::Subscriptions::Subscription.find 187955000000053082
+
+# Calling custom actions on a resource
+subscription.cancel cancel_at_end: false
+```
+
+## Supported Resources
+  * Product
+  * Plan
+  * Addon
+  * Customer
+  * Subscription (basic resource methods (create, retrieve, update) + cancel)
+  * Product
+
+## Resources Planned to be supported
+  * Subscription (more custom actions)
+  * Coupon
+  * ContactPerson
+  * Subscription
+  * Invoice
+  * Payment
+  * CreditNotes
+  * Refund
+  * HostedPage
+  * Event
 
 ## Development
 
