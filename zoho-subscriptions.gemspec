@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A Zoho Subscription API Client.}
   spec.description   = %q{A Zoho Subscription API Client.}
   spec.homepage      = "https://github.com/payrollhero/zoho-subscriptions"
+  spec.license       = "BSD-3-Clause"
+
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
