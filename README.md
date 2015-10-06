@@ -42,25 +42,23 @@ subscription = Zoho::Subscriptions::Subscription.find 187955000000053082
 subscription.cancel cancel_at_end: false
 ```
 
-## Supported Resources
-  * Product
-  * Plan
-  * Addon
-  * Customer
-  * Subscription (basic resource methods (create, retrieve, update) + cancel)
-  * Product
+## Supported Resources:
+  * [Product](https://www.zoho.com/subscriptions/api/v1/#products)
+  * [Plan](https://www.zoho.com/subscriptions/api/v1/#plans)
+  * [Addon](https://www.zoho.com/subscriptions/api/v1/#addons)
+  * [Customer](https://www.zoho.com/subscriptions/api/v1/#customers)
+  * [Subscription (basic resource methods (create, retrieve, update) + cancel)](https://www.zoho.com/subscriptions/api/v1/#subscriptions)
 
-## Resources Planned to be supported
-  * Subscription (more custom actions)
-  * Coupon
-  * ContactPerson
-  * Subscription
-  * Invoice
-  * Payment
-  * CreditNotes
-  * Refund
-  * HostedPage
-  * Event
+## Resources planned to be supported:
+  * [Subscription (more custom actions)](https://www.zoho.com/subscriptions/api/v1/#subscriptions)
+  * [Coupon](https://www.zoho.com/subscriptions/api/v1/#coupons)
+  * [ContactPerson](https://www.zoho.com/subscriptions/api/v1/#contact-persons)
+  * [Invoice](https://www.zoho.com/subscriptions/api/v1/#invoices)
+  * [Payment](https://www.zoho.com/subscriptions/api/v1/#payments)
+  * [CreditNotes](https://www.zoho.com/subscriptions/api/v1/#credit-notes)
+  * [Refund](https://www.zoho.com/subscriptions/api/v1/#refunds)
+  * [HostedPage](https://www.zoho.com/subscriptions/api/v1/#hosted-pages)
+  * [Event](https://www.zoho.com/subscriptions/api/v1/#events)
 
 ## Development
 
